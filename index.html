@@ -7,6 +7,43 @@
     <title>Breni</title>
     <link rel="stylesheet" href="index.css">
     <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            background: url("960m.jpg");
+            height: 7%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color:midnightblue
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        h1, p1 {
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p1 {
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+    </style>
+    <style>
         .fig {
          text-align: center; /* Выравнивание по центру */ 
         }
@@ -25,11 +62,11 @@
             <h1>𝐁𝐫𝐞𝐧𝐢</h1>
             <h1>Ты научишся программировать!</h1>
          </div>
-            <footer>
+            <!-- <footer>
             <p>
              <a href="profils.html"><Button>Профиля </a>
             </p>
-            </footer>
+            </footer> -->
                 <footer>
                 <p>
                     <a href="novosti.html"><Button>Новости сайта </a>
@@ -52,7 +89,38 @@
                             </footer>
                     <hr></hr>
                     <div class="text">
-                        <h1>ЗДЕСЬ БУДЕТ БОЛЬШЕ!</h1>
+                        <!-- <h1>ЗДЕСЬ БУДЕТ БОЛЬШЕ!</h1> -->
                      </div>
+                     <div class="container">
+                         <div class="center">
+                             <h1>До глобального обновления сайта осталось...:D</h1>
+                             <hr>
+                             <p1 id="timer"></p1>
+                         </div>
+                     </div>
+                     <script>
+                        // УСТАНАВЛИВАЕМ ВРЕМЯ ДЛЯ ОБРАТНОГО ОТСЧЁТА 
+                        var countDownDate = new Date("December 3, 2021 50:00:00").getTime();
+                        // Обновляем таймер  каждую  секунду
+                        var countDownFunction = setInterval(function () {
+                        // Время на данный момент
+                        var now = new Date().getTime();
+                        // Высчитываем промежуток времени между установленным временем сегодня
+                        var distance = countDownDate - now;
+                        // Высчитываем время для дней, часов, минут и секунд.
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / (1000));
+                        // Выдаём результат на сайте
+                        document.getElementById("timer").innerHTML =
+                            days + "д" + hours + "ч" + minutes + "м" + seconds + "с";
+                        // Что делать, когда отсчёт будет равен 0
+                        if (distance < 0) {
+                            clearInterval(countDownFunction);
+                            document.getElementById("timer").innerHTML = "Время истекло";
+                         }
+                        }, 1000)
+                     </script>
 </body>
 </html>
