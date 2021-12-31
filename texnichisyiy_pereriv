@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breni</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .container {
+            background: url("960m.jpg");
+            height: 7%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color:midnightblue
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        h1, p1 {
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p1 {
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+    </style> -->
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+       </style>
+            <style>
+        .text {
+         text-align:  center;
+        }
+             </style>
+</head>
+<body>
+                        <hr>
+                        <div class="text">
+                            <div style="color:rgb(39, 31, 78);">
+                        <h1>Технический перерыв.</h1>
+                        <hr>
+                        <div class="text">
+                            <!-- <div style="color:rgb(255, 255, 255);"> -->
+                        <p>Все права защищены © Michael Krokhin</p>
+                            </div>
+                     <!-- <div class="container">
+                         <div class="center">
+                             <h1>До глобального 2 обновления сайта осталось...</h1>
+                             <hr>
+                             <p1 id="timer"></p1>
+                         </div>
+                     </div>
+                     <script>
+                        // УСТАНАВЛИВАЕМ ВРЕМЯ ДЛЯ ОБРАТНОГО ОТСЧЁТА 
+                        var countDownDate = new Date("December 11, 2021 00:00:00").getTime();
+                        // Обновляем таймер  каждую  секунду
+                        var countDownFunction = setInterval(function () {
+                        // Время на данный момент
+                        var now = new Date().getTime();
+                        // Высчитываем промежуток времени между установленным временем сегодня
+                        var distance = countDownDate - now;
+                        // Высчитываем время для дней, часов, минут и секунд.
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / (1000));
+                        // Выдаём результат на сайте
+                        document.getElementById("timer").innerHTML =
+                            days + "д" + hours + "ч" + minutes + "м" + seconds + "с";
+                        // Что делать, когда отсчёт будет равен 0
+                        if (distance < 0) {
+                            clearInterval(countDownFunction);
+                            document.getElementById("timer").innerHTML = "Время истекло";
+                         }
+                        }, 1000)
+                     </script> -->
+</body>
+</html>
